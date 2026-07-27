@@ -1,0 +1,1 @@
+const fs = require('fs'); const text = fs.readFileSync('Deal funnel Data.xlsx - Deal tracker.csv','utf8'); const lines = text.split(/\r?\n/); console.log(lines[0]); const row = lines[1].split(','); console.log(row.slice(0,12)); console.log(row[10]); const headers = lines[0].split(','); console.log(headers);
